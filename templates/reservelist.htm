@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+   <head>
+      <link rel="stylesheet" href="../static/styles.css">
+   </head>
+   <body>
+      <h2>Reservation List</h2>
+      <table border: = 1>
+         <thead>
+            <td class="colname">Name:</td>
+            <td class="colname">Check-in Date:</td>
+            <td class="colname">Check-out Date:</td>
+            <td class="colname">Room Type:</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["checkin"]}}</td>
+               <td>{{row["checkout"]}}</td>
+               <td>{{row['roomtype']}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "\"><button>back to home</button></a>
+   </body>
+</html>

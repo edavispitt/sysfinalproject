@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="../static/styles.css">
+   </head>
+   <body>
+      <form action = "{{ url_for('add_reservation') }}" method = "POST">
+         <h2>Reservation Sign-Up</h2>
+         <h3>Name</h3>
+         <input type = "text" name = "nm" class="resinput"></br>
+         
+      <h3>Check-In-Date</h3>
+         <input type="date" name = "chkin" class="resinput"></textarea><br>
+         
+         <h3>Check-Out Date</h3>
+         <input type = "date" name = "chkout" class="resinput" /><br>
+         
+         <h3>Room Type</h3>
+         <input type = "text" name = "rm" class="resinput"/><br>
+         <input type = "submit" value = "submit" class="formbutton" /><br>
+      </form>
+   </body>
+</html>
